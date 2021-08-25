@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         input_operations InputFragment = new input_operations();
         output_fragment OutputFragment = new output_fragment();
+        getSupportActionBar().hide();
 
         FragmentManager manager = getSupportFragmentManager();
 
