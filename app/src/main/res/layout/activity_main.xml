@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/outputfragment"
+        android:name="com.example.hybrid_calculator.output_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout="@layout/fragment_output_fragment" />
+
+    <fragment
+        android:id="@+id/inputfragment"
+        android:layout_below="@+id/outputfragment"
+        android:name="com.example.hybrid_calculator.input_operations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_input_operations" />
+
+    <FrameLayout
+        android:id="@+id/fragcontain"
+        android:layout_width="376dp"
+        android:layout_height="525dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </FrameLayout>
+
+</RelativeLayout>
